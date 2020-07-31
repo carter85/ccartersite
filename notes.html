@@ -1,93 +1,117 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Notes, taken not stirred</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+<title>JavaScript & JQuery Notes/Flash Cards</title>
+<link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div id="notes">
-    Comparison Operators - Comparison Operators allow you to compare values and test whether a condition is met or not. Examoles incluse the greater than > an less than < symbols, and the double equals sign == which checks if two values are equal.
+<button onclick="hideShit()">Clerk me</button>
+<input id="hideChapOne" type="button" onclick="hideShit()" value="Click to hide chapter 1">
+<div id="chOne">
+    <h3>Words to understand for chapter 1</h3>
+    <p class="words">Script</p><p class="defs">A Script is a series of instructions that a computer can follow to achieve a goal. It can be compared to recipes, handbooks, or manuals.</p>
+    <p class="words">Vocabulary</p><p class="defs">The words that computers can understand.</p>
+    <p class="words">Syntax</p><p class="defs">How words are put together to create instructions a computer can follow.</p>
+    <p>object</p><p>In computer programming, each physical thing in the world can be represented as an object.</p>
+    <p>properties</p><p>properties describe the characteristics of an object. Each property has a name and a v</p>
+    
+    <p>Writing a Script</p>
+    <p>To write a script, you need to first state your goal and then list the tasks that need to be completed in order to achieve it.</p>
+    <p>A computer doesn't perform tasks like a person; it needs to follow instructions every time it performs a task, so a program must give the computer enough detail to perform the task as if every time were its first time.</p>
+    <p>Start with the big picture of what you want to achieve, and break that down into smaller steps:</p>
+    <ul>
+        <li>>>Define the goal</li>
+        <li>>>Design the script</li>
+        <li>>>Code each step</li>
+    </ul>
+    <p>Designing a Script: Tasks</p>
+    <p>>Once you know the goal of your script, you can work out the individual tasks needed to achieve it.</p>
+    <p>Designing a Script: Steps</p>
+    <p>Each individual task my be broken down into a sequence of steps. When you are ready to code the script, these steps can then be translated into individual lines of code.</p>
+    <p>From Steps to Code</p>
+    <p>Every step for every task shown in a flowchart needs to be written in a language the computer can understand and follow.</p>
+    <p>Computers solve problems programmatically: they follow a series of instructions one after another.</p>
+    <p>Defining a goal and defining the script</p>
+    <p>Consider how you might aproach a different type of script. Details goals for the script. Break it into a series of tasks that have to be performed in order to achieve the goals.
+    <p>Often scripts will need to perform different tasks in different situations. You can use flowcharts to work out how the tasks fit together. The flowcharts show the paths between each step. Arrows show how the script moves from one task to the next. Different shapes represent different types of tasks. In some places are decisions which cause the code to follow  different paths.
+    <h3>>SUMMARY</h3>
+<ul>
+    <li>>A script is a series of instructions that the computer can follow in order to schieve a goal.</li>
+    <li>>Each time the script runs, it might only use a subset of all the instructions.</li>
+    <li>>Computers aproach tasks in a different way than humans, so your instructions must let the computer solve the task programmatically.</li>
+    <li>>To aproach writing a script, break down your goal into a series of tasks and then work out each step needed to complete that task(a flowchart can help).</li>
+</ul>
+Objects and properties
+alue, and each tell you something about the object.
 
-    Two components to a decison: 1. an expression is evaluated, which returns a value, 2. a conditional statement says what to do in a given situation
-    
-    var score = 7;
-    
-    if (score > 50) {
-        document.write("You passed");
-    } else {
-        document.write("You failed");
-    }
-    
-    == is equal to - compares two values (numbers, strings, or booleans) to see if they are the same
-    
-    != is not equal to - compares two values (numbers, strings, or booleans) to see if they are not the same
-    
-    === strict equal to - this operator compares two values to check that both the data type and value are the same
-    
-    !== strict not equal to - compares two values to check that both the data type and value are not the same
-    
-    > greater than - checks to see if the number on the left is greater than the number on the right
-    
-    < lesser than - checks to see if the number on the left is lesser than the number on the right
-    
-    >= greater than or equal to - checks to see if the number on the left is greater than or equal to the number or the right
-    
-    <= less than or equal to - checks to see if the nummber on the left is lesser than or equal to the number on the right
-    
-    Logical operators allow you to compare the results of more than one comparison operator.
-    
-    && Logical AND - operator tests more than one condition. If both expressions evaluate as TRUE, then the expression will return TRUE, if either returns FALSE, the entire operation returns FALSE.
-    
-    || Logical OR - operator tests at least one conditon. If either expression returns TRUE, then the expression returns TRUE.
-    
-    ! Logical NOT - operator takes a single Boolean value and inverts it, reverses the state of an expression. !(2<1) returns TRUE
-    
-    Short circuit evaluation - A strategy most programming languages use to avoid unnecessary work. If the first condition is enough to get an asnwer, there is no need to evaluate the second condition.
-    
-    If statement - The if statement evaluates (checks) a condition. If the condition evaluates to TRUE, any statements in the subsequent code block are executed.
-    
-    If..else statement - If else statements check a condition. If the condition is found TRUE, the code block is ran. If found FALSE, the code after the else is then evaluated, and so on.
-    
-    Switch statement - A switch statement starts with a variable called the switch value. Each case indicates a possible value for this variable and the code that should run if the variable matches that value. Using case for each new statement, followed by "break;" telling the code to stop executing.
-    
-    Type coercion - Type coercion is when Javascript converts data behind the scenes to complete an operation.
-    
-    Weak typing - Because the data type for a value can change, JS is said to have weak typing.
-    
-    Falsy - Falsy values are treated as if they were FALSE. Falsy values can also be treated as the number 0.
-    
-    Truthy - Truthy values are treated as if they were TRUE. Truthy values can also be treated as the number 1.
-    
-    Unary operator - A unary operator returns a result with just one operand.
-    
-    For loop - A for loop is used when code is needed to run a specific number of times.
-    
-    While loop - A while loop is used when you do not know how many times the code should run
-    
-    Do while loop - A do while loop works like the while loop except it will always run the statements inside the curly braces, even if the condition ecaluiates to false.
-    
-    break - Break is used to cause the termination of the loop and tells the interpreter to go onto the next statement of code outside the loop.
-    
-    continue - Continue tells the interpreter to stop the current iteration amd then update and chevk the condition again(if it is TRUE, the code runs again.
-    
-    Document Object Model(DOM) - The Document Object Model specifies how browsers should create a model of an HTML page and how JS can access and update the contents of a web page while it is in the browser window.
-    
-    DOM tree - The DOM tree specifies the way in which the browser should structure the model of the web page.
-    
-    Application Programming Interface(API) - API's let programs and scripts talk to each other.
-    
-    Document Node - The document node reperesents the entire web page, and is the first node in the DOM tree.
-    
-    Element Node - Element nodes describe the structure of an HTML page, such as h1 or /< p > tags.
-    
-    Attribute Node - Attribute nodes represent attributes contained in opening tags of HTML elements.
-    
-    Text Node - text nodes are contained within the element nodes, and cannot contain children.
-    
-    
-    </div> 
 
-<scripts src="/js/scripts.js"></scripts>
+Events
+An event is something that hapens on a computer that the computer can react to, such as a keypress or moving the mouse over an object.
+
+
+Methods
+Methods represent things that people need to do with objects. They can retrieve  or update the values of an objects properties. You do not always need to know how a method achieves a task, but you need to know how to ask the question and how to interpret any ansers ig gives you.
+
+
+Web Browsers Are programs Built Using Objects
+Web browsers create models of the web page they are showing and of the broswer window that the page is being shown in.
+
+
+The Document Object Represents An HTML page
+Using the document object, you can access and change what content users see on the page and respond to how they interact with it.
+
+Like other objects that represent real worl things, the document object has:
+>properties - properties describe characteristics of the current web page, such as the title.
+>Methods - Methods perform tasks associated with the document currently loaded in the browser, such as getting information from a specified element or adding new content.
+>Events - You can respond to events, such as a user clicking or taping on an element.
+
+>Document Object Model(DOM) - When a browser creates a model of a web page, it also creates a new object for each element on the page, together these objects are described as the Document Object Model(DOM).
+
+
+How A Browser Sees A Webpage
+In order to understand how you can change the content of an HTML page using JS, you need to know how a broswer interprets the HTML code and aplies styling to it.
+
+>1. Receive a page as HTML code.
+>2. Create a model of the page and store it in memory. The model of a webpage can look like a family tree, at the top of which is a document object which represents the whole document. Beneath the document object, each object is stored in what is called a node. Each node represents another object, and these nodes are worked with to change objects in the DOM.
+>3. Use a rendering engine to show the page on screen. If these is no CSS, the rendering engine will aply default styles to HTML elements. 
+
+All major broswers use a JS interpreter to translate your instructions in JS into instructions the computer can follow.
+
+>interpreter - The interpreter takes instructions and translates them into instructions the computer can use to achieve the tasks you want it to perform.
+
+>interpreted programming language - An interpreted programming language, like JS, each line of code is translated one-by-one as the script is run.
+
+
+SUMMARY
+>Computers create models of the world using data.
+>The models use objects to represent physical things. Objects can have: properties that tell us about the object; methods that perform tasks using the properties of that object; events which are triggered when a user interacts with the computer.
+>programmers can write code to say "When this event occurs, run that code."
+>Web browsers use HTML markup to create a model of the web page. Each element creates its own node (which is a kind of object).
+>To make web pages interactive, you write code that uses the browser's model of the web page.
+</div>
+
+<div id="chTwo">
+
+<ul id="chap3">
+    <h4>Lorem</h4><li>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Voluptatem consectetur tenetur fugiat dignissimos, error optio beatae quae aut ipsam facilis.</li>
+</ul>
+<ul id="chap4">
+
+</ul>
+<ul id="chap5">
+</ul>
+<ul id="chap6">
+</ul>
+<ul id="chap7">
+</ul>
+<ul id="chap8">
+</ul>      
+</div> 
+
+
+<script src="js/scripts.js"></script>
+
 </body>
 
 

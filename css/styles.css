@@ -1,0 +1,16 @@
+#banner {
+    width: 100%;
+    height: 88px;
+    background: rgb(6,2,75);
+    background: linear-gradient(33deg,rgba(9,111,121,1) 0%, rgba(0,212,255,1) 100%);
+    display: grid;
+    position: fixed;
+    top: 0em;
+    left: 0em;
+    border-radius: 0% 0% 50% 50%;
+    border: 2px solid seagreen;
+}
+
+html {
+    background: rosybrown;
+}
