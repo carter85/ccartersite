@@ -5,24 +5,42 @@
 <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-<button onclick="hideShit()">Clerk me</button>
 <input id="hideChapOne" type="button" onclick="hideShit()" value="Click to hide chapter 1">
-<div id="chOne">
-    <h3>Words to understand for chapter 1</h3>
-    <p class="words">Script</p><p class="defs">A Script is a series of instructions that a computer can follow to achieve a goal. It can be compared to recipes, handbooks, or manuals.</p>
-    <p class="words">Vocabulary</p><p class="defs">The words that computers can understand.</p>
-    <p class="words">Syntax</p><p class="defs">How words are put together to create instructions a computer can follow.</p>
-    <p>object</p><p>In computer programming, each physical thing in the world can be represented as an object.</p>
-    <p>properties</p><p>properties describe the characteristics of an object. Each property has a name and a v</p>
-    
-    <p>Writing a Script</p>
-    <p>To write a script, you need to first state your goal and then list the tasks that need to be completed in order to achieve it.</p>
-    <p>A computer doesn't perform tasks like a person; it needs to follow instructions every time it performs a task, so a program must give the computer enough detail to perform the task as if every time were its first time.</p>
-    <p>Start with the big picture of what you want to achieve, and break that down into smaller steps:</p>
+<div id="wrapper">
+    <div id="chOne">
+        <div id="vocab">
+    <h3>Words to understand for chapter 1</h3><br />
+<span class="card"><p class="words">Script</p><p class="defs">A Script is a series of instructions that a computer can follow to achieve a goal. It can be compared to recipes, handbooks, or manuals.</p><br /></span>
+<span class="card"><p class="words">Vocabulary</p><p class="defs">The words that computers can understand.</p><br /></span>
+<span class="card"><p class="words">Syntax</p><p class="defs">How words are put together to create instructions a computer can follow.</p><br /></span>
+<span class="card"><p class="words">Object</p><p class="defs">In computer programming, each physical thing in the world can be represented as an object.</p><br /></span>
+<span class="card"><p class="words">Properties</p><p class="defs">Properties describe the characteristics of an object. Each property has a name and a value, and each tell you something about the object.</p><br /></span>
+<span class="card"><p class="words">Interpreter</p><p class="defs">The interpreter takes instructions and translates them into instructions the computer can use to achieve the tasks you want it to perform.</p><br /></span>
+<span class="card"><p class="words">Interpreted Programming Language</p><p class="defs">An interpreted programming language, like JS, in which each line of code is translated one-by-one as the script is run.</p><br /></span>
+<span class="card"><p class="words">Events</p><p class="defs">An event is something that hapens on a computer that the computer can react to, such as a keypress or moving the mouse over an object.</p><br /></span>
+<span class="card"><p class="words">Methods</p><p class="defs">Methods represent things that people need to do with objects. They can retrieve  or update the values of an objects properties. You do not always need to know how a method achieves a task, but you need to know how to ask the question and how to interpret any ansers ig gives you.</p><br /></span>
+<span class="card"><p class="words">Calling</p><p class="defs">Programmers refer to using a method of an object as calling.</p><br /></span>
+<span class="card"><p class="words">.</p><p class="defs">The full stop is referred to as the member operator. The document object has has several methods and properties, and are known as members of that object. You access the members of an object using a dot between the object name and the member you want to access.</p></span>
+<span class="card"><p class="words">Seperation of Concerns</p><p class="defs">When possible, aim to keep the three languages in seperate files, with the HTML page linking to the CSS and JS files. This is referred to as the seperation of concerns.</p><br /></span>
+<span class="card"><p class="words">Content Layer</p><p class="defs">Where the content of the page lives, the HTML gives the page structure and adds semantics. Stored in .html files</p><br /></span>
+<span class="card"><p class="words">Presentation layer</p><p class="defs">The CSS enhances the HTML page with rules that state how the HTML content is presented. Stored in .css files.</p><br /></span>
+<span class="card"><p class="words">Behavior Layer</p><p class="defs">Where the behavior of the page can be changed, adding interactivity. Stored in .js files.</p><br /></span>
+<span class="card"><p class="words">Progressive Enhancement</p><p class="defs">Progressive enhancement is the strategy of implementing HTML first, focusing on content, followed by CSS to improve the look of the page, and then JavaScript, adding interactivity.</p><br /></span>
+<span class="card"><p class="words">Document</p><p class="defs">The document refers to the entire web page. </p><br /></span>
+<span class="card"><p class="words">Properties</p><p class="defs">Properties describe characteristics of the current web page, such as the title.</p></span>
+<span class="card"><p class="words">Methods</p><p class="defs">Methods perform tasks associated with the document currently loaded in the browser, such as getting information from a specified element or adding new content.</p></span>
+<span class="card"><p class="words">Events</p><p class="defs">You can respond to events, such as a user clicking or taping on an element.</p></span>
+<span class="card"><p class="words">Document Object Model(DOM)</p><p class="defs">When a browser creates a model of a web page, it also creates a new object for each element on the page, together these objects are described as the Document Object Model(DOM).</p></span>
+</div>
+<p>Writing a Script</p>
+<span class="card"><p>To write a script, you need to first state your goal and then list the tasks that need to be completed in order to achieve it.</p><br /></span>
+<span class="card"><p>A computer doesn't perform tasks like a person; it needs to follow instructions every time it performs a task, so a program must give the computer enough detail to perform the task as if every time were its first time.</p><br /></span>
+<span class="card"><p>Start with the big picture of what you want to achieve, and break that down into smaller steps:</p><br /></span>
+
     <ul>
-        <li>>>Define the goal</li>
-        <li>>>Design the script</li>
-        <li>>>Code each step</li>
+        <li>Define the goal</li>
+        <li>Design the script</li>
+        <li>Code each step</li>
     </ul>
     <p>Designing a Script: Tasks</p>
     <p>>Once you know the goal of your script, you can work out the individual tasks needed to achieve it.</p>
@@ -34,60 +52,51 @@
     <p>Defining a goal and defining the script</p>
     <p>Consider how you might aproach a different type of script. Details goals for the script. Break it into a series of tasks that have to be performed in order to achieve the goals.
     <p>Often scripts will need to perform different tasks in different situations. You can use flowcharts to work out how the tasks fit together. The flowcharts show the paths between each step. Arrows show how the script moves from one task to the next. Different shapes represent different types of tasks. In some places are decisions which cause the code to follow  different paths.
-    <h3>>SUMMARY</h3>
+    <h3>SUMMARY</h3>
 <ul>
-    <li>>A script is a series of instructions that the computer can follow in order to schieve a goal.</li>
-    <li>>Each time the script runs, it might only use a subset of all the instructions.</li>
-    <li>>Computers aproach tasks in a different way than humans, so your instructions must let the computer solve the task programmatically.</li>
-    <li>>To aproach writing a script, break down your goal into a series of tasks and then work out each step needed to complete that task(a flowchart can help).</li>
+    <li>A script is a series of instructions that the computer can follow in order to schieve a goal.</li>
+    <li>Each time the script runs, it might only use a subset of all the instructions.</li>
+    <li>Computers aproach tasks in a different way than humans, so your instructions must let the computer solve the task programmatically.</li>
+    <li>To aproach writing a script, break down your goal into a series of tasks and then work out each step needed to complete that task(a flowchart can help).</li>
 </ul>
-Objects and properties
-alue, and each tell you something about the object.
 
+<p>Objects and properties</p>
+<p>Web Browsers Are programs Built Using Objects</p>
+<p>Web browsers create models of the web page they are showing and of the broswer window that the page is being shown in.</p>
+<p>The Document Object Represents An HTML page</p>
+<p>Using the document object, you can access and change what content users see on the page and respond to how they interact with it.</p>
+<p>Like other objects that represent real worl things, the document object has:</p>
 
-Events
-An event is something that hapens on a computer that the computer can react to, such as a keypress or moving the mouse over an object.
-
-
-Methods
-Methods represent things that people need to do with objects. They can retrieve  or update the values of an objects properties. You do not always need to know how a method achieves a task, but you need to know how to ask the question and how to interpret any ansers ig gives you.
-
-
-Web Browsers Are programs Built Using Objects
-Web browsers create models of the web page they are showing and of the broswer window that the page is being shown in.
-
-
-The Document Object Represents An HTML page
-Using the document object, you can access and change what content users see on the page and respond to how they interact with it.
-
-Like other objects that represent real worl things, the document object has:
->properties - properties describe characteristics of the current web page, such as the title.
->Methods - Methods perform tasks associated with the document currently loaded in the browser, such as getting information from a specified element or adding new content.
->Events - You can respond to events, such as a user clicking or taping on an element.
-
->Document Object Model(DOM) - When a browser creates a model of a web page, it also creates a new object for each element on the page, together these objects are described as the Document Object Model(DOM).
-
-
-How A Browser Sees A Webpage
-In order to understand how you can change the content of an HTML page using JS, you need to know how a broswer interprets the HTML code and aplies styling to it.
-
->1. Receive a page as HTML code.
->2. Create a model of the page and store it in memory. The model of a webpage can look like a family tree, at the top of which is a document object which represents the whole document. Beneath the document object, each object is stored in what is called a node. Each node represents another object, and these nodes are worked with to change objects in the DOM.
->3. Use a rendering engine to show the page on screen. If these is no CSS, the rendering engine will aply default styles to HTML elements. 
-
-All major broswers use a JS interpreter to translate your instructions in JS into instructions the computer can follow.
-
->interpreter - The interpreter takes instructions and translates them into instructions the computer can use to achieve the tasks you want it to perform.
-
->interpreted programming language - An interpreted programming language, like JS, each line of code is translated one-by-one as the script is run.
-
-
-SUMMARY
->Computers create models of the world using data.
->The models use objects to represent physical things. Objects can have: properties that tell us about the object; methods that perform tasks using the properties of that object; events which are triggered when a user interacts with the computer.
->programmers can write code to say "When this event occurs, run that code."
->Web browsers use HTML markup to create a model of the web page. Each element creates its own node (which is a kind of object).
->To make web pages interactive, you write code that uses the browser's model of the web page.
+<p>How A Browser Sees A Webpage</p>
+<p>In order to understand how you can change the content of an HTML page using JS, you need to know how a broswer interprets the HTML code and aplies styling to it.</p>
+<p>1. Receive a page as HTML code.</p>
+<p>2. Create a model of the page and store it in memory. The model of a webpage can look like a family tree, at the top of which is a document object which represents the whole document. Beneath the document object, each object is stored in what is called a node. Each node represents another object, and these nodes are worked with to change objects in the DOM.</p>
+<p>3. Use a rendering engine to show the page on screen. If these is no CSS, the rendering engine will aply default styles to HTML elements. </p>
+<p>All major broswers use a JS interpreter to translate your instructions in JS into instructions the computer can follow.</p>
+<p>SUMMARY</p>
+<p>Computers create models of the world using data.</p>
+<p>The models use objects to represent physical things. Objects can have: properties that tell us about the object; methods that perform tasks using the properties of that object; events which are triggered when a user interacts with the computer.</p>
+<p>programmers can write code to say "When this event occurs, run that code."</p>
+<p>Web browsers use HTML markup to create a model of the web page. Each element creates its own node (which is a kind of object).</p>
+<p>To make web pages interactive, you write code that uses the browser's model of the web page.</p>
+<p>How HTML, CSS, and JS Fit Together</p>
+<p>You need to know how JS will fit together with the HTML and CSS in your web pages.</p>
+<p>Creating a Basic JavaScript</p>
+<p>JS is written in plain text, just like HTML and CSS, so you do not need any new tools to write a script.</p>
+<p>Linking to a JS file from an HTML pageThe Source Code Is Not Ammended.</p>
+<p>If you look at the source code after using JS to alter elements, you will see that the actual HTML has not been changed. Only the web page stored in memory is altered by the JS.</p>
+<p>How To Use Objects and Methods</p>
+<p>document.write('Good afternoon');</p>
+<p>('Good afternoon') - Whenever a method requires some information in order to work, the data is given inside the parentheses. Each piece of information is called a parameter of the method. In this case, the write() method needs to know what to write into the page.</p>
+<p>write('Good afternoon') - The write() method of the document object allows new content to be written into the page where the script element sits.</p>
+<p>Behind the scenes, the browser uses a lot more code to make the words appear on the screen, but you don't need to know how the browser does this.</p>
+<p>JS Runs Where It Is Found In The HTML</p>
+<p>When the browser comes across a script element, it stops to load the script then checks to see if it needs to do anything.</p>
+<p>The script element can be moved around on the page, and this affects where the new greeting is written into the page.</p>
+<p>SUMMARY</p>
+<p>It is best to keep JS code in its own JS file. JS files are text files that have the .js extension.</p>
+<p>The HTML script element is used in HTML pages to tell the browser to load the JS file.</p>
+<p>If you view the source code of the page in the browser, the JS will not have changed the HTML, because the script works with the model of the web page that the browser has created.</p>
 </div>
 
 <div id="chTwo">
@@ -107,6 +116,9 @@ SUMMARY
 </ul>
 <ul id="chap8">
 </ul>      
+
+
+    </div>
 </div> 
 
 
