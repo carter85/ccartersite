@@ -1,3 +1,5 @@
+/* 
+
 
 
 #banner {
@@ -24,6 +26,8 @@ html {
 
 .defs {
     text-align: center;
+    display: block;
+    
 }
 
 #vocab {
@@ -39,7 +43,7 @@ html {
 #vocab > span {
     background: #ccc;
 }
- */
+ 
 .card { 
     background: rgb(6,2,75);
     background: linear-gradient(190deg, rgba(6,2,75,1) 0%, rgba(9,111,121,1) 15%, rgba(0,212,255,1) 75%); 
@@ -50,4 +54,66 @@ html {
 
 .card:hover {
     transform: scale(1.1);
+} */ 
+#chOne {
+    display: grid;
+    justify-content: center;
 }
+
+.button {
+    display: grid;
+    width: 200px;
+    height: 50px;
+}
+#buttons {
+    display: grid;
+    grid-template-columns: ;
+}
+
+#card {
+    display: grid;
+    height: 25em;
+    width: 15em;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 1em;
+    background-color: #ddd;
+    
+  }
+
+  #topText, #bottomText {
+      display: grid;
+      justify-content: center;
+      align-content: center;
+  }
+  
+  #top {
+    background: #bbb;
+    display: grid;
+    height: 6em;
+    width: 15em;
+    border-radius: 1em 1em 0 0;
+    text-align: center;
+    text-justify: center;
+    
+  }
+
+  #bottom {
+    background-color: #ddd;
+    display: grid;
+    height: 18.9em;
+    width: 15em;
+    border-radius: 0 0 1em 1em;
+    text-align: center;
+    border-top: 2px solid black;
+  
+  
+ /*  .cardtype {
+    height: auto;
+    width: 99%;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 1em 1em 1em 1em;
+} */
