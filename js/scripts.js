@@ -1,26 +1,9 @@
-
-function hideShit() {
-    var x = document.getElementById("chOne");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    }
-    else {
-        x.style.display = "none";
+class Card {
+constructor(term, def) {
+    this.term = term;
+    this.def = def;
     }
 }
-
-function nextCard() {
-    const randomElement = curd[Math.floor(Math.random() * curd.length)];
-    document.getElementById("topText").innerHTML = randomElement.term;
-    document.getElementById("bottomText").innerHTML = randomElement.def;    
-        }
-        
-        class Card {
-            constructor(term, def) {
-          this.term = term;
-          this.def = def;
-        }
-      }
 
 const card1 = new Card("Script", 'A script is a series of instructions that a computer can follow to achieve a goal. It can be compared to recipes, handbooks, or manuals');
 const card2 = new Card('Vocabulary', 'The words that computers can understand');

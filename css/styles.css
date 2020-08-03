@@ -1,60 +1,13 @@
-/* 
-
-
-
-#banner {
-    width: 100%;
-    height: 88px;
-    background: rgb(6,2,75);
-    background: linear-gradient(33deg,rgba(9,111,121,1) 0%, rgba(0,212,255,1) 100%);
-    top: 0em;
-    left: 0em;
-    border-radius: 0% 0% 50% 50%;
-    border: 2px solid seagreen;
-}
- 
-html {
-    background: #888;
-}
- 
-.words {
-    border-width: medium;
-    border-radius: 2px;
-    text-align: center;
-    border-radius: 5px;
-    }
-
-.defs {
-    text-align: center;
-    display: block;
-    
+body {
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/03/Debian-dark-wallpapers-HD-1080.jpg"), url("https://images.pexels.com/photos/259915/pexels-photo-259915.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ccc;
+    width: auto;
+    max-width: 100%;
 }
 
-#vocab {
-    display: grid;
-    gap: 1em;
-    grid-template-columns: repeat(2, 25fr);
-}
-/* 
-#vocab > span:nth-child(odd) {
-    background: #eee;
-}
-
-#vocab > span {
-    background: #ccc;
-}
- 
-.card { 
-    background: rgb(6,2,75);
-    background: linear-gradient(190deg, rgba(6,2,75,1) 0%, rgba(9,111,121,1) 15%, rgba(0,212,255,1) 75%); 
-    border-radius: 20px;
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    border: 2px solid #731963;
-}
-
-.card:hover {
-    transform: scale(1.1);
-} */ 
 #chOne {
     display: grid;
     justify-content: center;
@@ -64,10 +17,16 @@ html {
     display: grid;
     width: 200px;
     height: 50px;
+    color: black;
+    background: teal;
+    border: 2px solid black;
+    border-radius: 20px;
+
 }
 #buttons {
     display: grid;
-    grid-template-columns: ;
+    grid-template-columns: 200px 200px;
+    gap: 1em;
 }
 
 #card {
@@ -79,7 +38,7 @@ html {
     border-color: black;
     border-radius: 1em;
     background-color: #ddd;
-    
+    margin: 5em;
   }
 
   #topText, #bottomText {
@@ -100,20 +59,16 @@ html {
   }
 
   #bottom {
-    background-color: #ddd;
-    display: grid;
+    background-color: #a9a9a9;
+    display: grid; 
     height: 18.9em;
     width: 15em;
     border-radius: 0 0 1em 1em;
     text-align: center;
     border-top: 2px solid black;
+  }
   
-  
- /*  .cardtype {
-    height: auto;
-    width: 99%;
-    border: solid;
-    border-color: black;
-    border-width: 1px;
-    border-radius: 1em 1em 1em 1em;
-} */
+#bottomText {
+    display: none;
+    padding: 1em;
+}
