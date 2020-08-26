@@ -6,36 +6,40 @@
 <link rel="stylesheet" href="./css/about-style.css">
 <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet"> 
 <script src="https://kit.fontawesome.com/b3caeac506.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <!-- NAVIGATION -->
 <div id="block"></div>
 <ul id="navbar">
     <li id="shortcut1" class="navItems"><a href="#about">About Me</a></li>
-    <li id="shortcut2" class="navItems"><a href="#">Vampires</a></li>
     <li id="shortcut3" class="navItems"><a href="#work">Work</a></li>
     <li id="shortcut4" class="navItems"><a href="#projects">Projects</a></li>
+    <li id="shortcut2" class="navItems"><a href="#contact">Contact</a></li>
 </ul>
 <!-- NAVIGATION END -->
 
+<button id="hideButton">hide</button>
+
 <!-- INTRO SECTION -->
 <div id="introContainer">
-    <span id="about"
-    <h1>Casey Carter</h1>
-    <hr>
-    <h2>Web Developer</h2>
-    <h2>About Me</h2>
-    <section id="about-sect">
-        <p>I am 35 years old, living in East Texas. Having recently moved back home to be around family during the 2020 pandemic, 
-            I decided to take time to learn a new skill, Web Development. This site is primarily to act as a portfolio and resume.
-        </p>
-        <p>With a variety of experience, I aim to bring a unique and innovative point of view to your company.</p>
-    </section>
+    <span id="about">
+        <h1>Casey Carter</h1>
+        <hr>
+        <h2>Web Developer</h2>
+        <h2>About Me</h2>
+        <section id="about-sect">
+            <p>I am 35 years old, living in East Texas. Having recently moved back home to be around family during the 2020 pandemic, 
+                I decided to take time to learn a new skill, Web Development. This site is primarily to act as a portfolio and resume.
+            </p>
+            <p>With a variety of experience, I aim to bring a unique and innovative point of view to your company.</p>
+        </section>
+    </span>
 </div>
 <!-- INTRO END -->
 
 <!-- KNOWLEDGE -->
-<div id="knowContainter">
+<div id="knowContainer"><a href="#">Click to hide</a>
     <div class="title">Languages Known</p><p class="bottom"><ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></p></div>
     <div class="title">Dev Tools</p><p class="bottom"><ul><li>Git</li><li>Linux</li><li>Console</li><li>Stack Overflow</li></ul></p></div>
 </div>
@@ -134,7 +138,34 @@
 </div>
 <!-- PROJECTS END -->
 
+<!-- CONTACT ME -->
+<div id="contact"></div>
+
+
+<!-- CONTACT ME END -->
+
 <div id="return"><a href="#navbar">Return to Top</a></div>
+
+<div id="signature">
+    <p id="ca">Casey Carter</p>
+</div>
+
+<script>
+
+function clickHide() {
+    var h = document.getElementById(hideButton);
+    var navID = document.getElementById(navBar);
+}
+$("#hideButton").click(function(){
+    $("#knowContainer").toggle("slow");    
+});
+/* 
+$("#hideButton").click(function(){
+    $("#knowContainer").show();
+});
+ */
+</script>
+
 </body>
 </div>
 </html>
