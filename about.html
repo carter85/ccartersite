@@ -3,9 +3,15 @@
 <div id="main">
 <head>
 <title>Casey Carter Portfolio</title>
+<!-- Stylesheets -->
 <link rel="stylesheet" href="./css/about-style.css">
+<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400&display=swap" rel="stylesheet"> 
+<!-- Font Awesome Icons -->
 <script src="https://kit.fontawesome.com/b3caeac506.js" crossorigin="anonymous"></script>
+<!-- JQuery link -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
@@ -19,15 +25,11 @@
 </ul>
 <!-- NAVIGATION END -->
 
-<button id="hideButton">hide</button>
-
 <!-- INTRO SECTION -->
 <div id="introContainer">
     <span id="about">
-        <h1>Casey Carter</h1>
-        <hr>
-        <h2>Web Developer</h2>
-        <h2>About Me</h2>
+        <h1 id="name"><u>Casey Carter</u></h1>
+        <h2 id="developer"><u>Web Developer</u></h2>
         <section id="about-sect">
             <p>I am 35 years old, living in East Texas. Having recently moved back home to be around family during the 2020 pandemic, 
                 I decided to take time to learn a new skill, Web Development. This site is primarily to act as a portfolio and resume.
@@ -39,9 +41,9 @@
 <!-- INTRO END -->
 
 <!-- KNOWLEDGE -->
-<div id="knowContainer"><a href="#">Click to hide</a>
-    <div class="title">Languages Known</p><p class="bottom"><ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></p></div>
-    <div class="title">Dev Tools</p><p class="bottom"><ul><li>Git</li><li>Linux</li><li>Console</li><li>Stack Overflow</li></ul></p></div>
+<div id="knowContainer">
+    <div class="knowTitle" id="languages">Languages Known</p><p class="bottom"><ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>JQuery</li></ul></p></div>
+    <div class="knowTitle" id="tools">Dev Tools Used</p><p class="bottom"><ul><li>Google</li><li>Git</li><li>Linux</li><li>Console</li><li><b>Google</b></li><li>Stack Overflow</li></ul></p></div>
 </div>
 <!-- KNOWLEDGE -->
 
@@ -152,18 +154,16 @@
 
 <script>
 
-function clickHide() {
-    var h = document.getElementById(hideButton);
-    var navID = document.getElementById(navBar);
-}
-$("#hideButton").click(function(){
-    $("#knowContainer").toggle("slow");    
-});
-/* 
-$("#hideButton").click(function(){
-    $("#knowContainer").show();
-});
- */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+} 
 </script>
 
 </body>

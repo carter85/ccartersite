@@ -1,34 +1,148 @@
-
-
-#navbar {
-    display: grid;
-    height: 20px;
-    width: 100%;
-    position: absolute;
+body {
+    background: rgb(244,244,244);
+    background: linear-gradient(45deg, rgba(244,244,244,1) 0%, rgba(219,2,174,1) 0%, rgba(105,245,220,1) 88%); 
 }
-/* 
-#navbar::after {
-    background-color: #454545;
-    content: "";
-    width: 100%;
-    height: 3em;
-} */
-
 #signature {
     display: grid;
     font-family: 'Alata', sans-serif;
-    w3-animate-top: 
 }
-
+/* INTRO SECTION START */
 #introContainer {
-    background-color: palegreen;
+    display: grid;
+    min-width: 35%;
+    max-width: 90%;
+    margin: 2em;
+    height: auto;
+    justify-self: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
 }
+#about {
+    max-width: 75%;
+    background-color: whitesmoke;
+    opacity: .8;
+    border-radius: 0 5% 0 5%;
+    width: auto;
+    height: auto;
+    display: grid;
+    justify-self: center;
+    text-align: center;
+    -webkit-box-shadow: 7px 7px 8px 3px rgba(0,0,0,1);
+    -moz-box-shadow: 7px 7px 8px 3px rgba(0,0,0,1);
+    box-shadow: 7px 7px 8px 3px rgba(0,0,0,1);
+}
+#about-sect {
+    width: 75%;
+    justify-self: center;
+    opacity: 1;
+}
+/* INTRO SECTION END */
+
+/* KNOWLEDGE START */
 #knowContainer {
-    background-color: palevioletred;
+    display: grid;
+    width: 100%;
+    margin: 2em;
+    background-color: violet;
+    height: auto;
+    justify-self: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 16px;
 }
+#languages {
+}
+#tools {
+}
+.knowTitle {
+    max-width: 75%;
+    background-color: whitesmoke;
+    opacity: .8;
+    border-radius: 0 5% 0 5%;
+    width: auto;
+    height: auto;
+    display: grid;
+    justify-self: center;
+    text-align: center;
+    -webkit-box-shadow: 7px 7px 8px 3px rgba(0,0,0,1);
+    -moz-box-shadow: 7px 7px 8px 3px rgba(0,0,0,1);
+    box-shadow: 7px 7px 8px 3px rgba(0,0,0,1);
+}
+/* KNOWLEDGE END */
+
+
 #work {
     background-color: palegreen;
 }
 #projects {
     background-color: palevioletred;
+}   
+#name {
+    font-size: 75px;    
+    font-family: 'Merriweather', serif;
+    opacity: 1;
 }
+#developer {
+    font-size: 65px;
+    opacity: 1;
+
+    font-family: 'Merriweather', serif;
+}
+/* #navbar {
+    display: grid;
+    position: fixed;
+    width: 100%;
+    height: 3em;
+    top: 0px;
+    background: cadetblue;
+    left: 0em;
+    margin: 0px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-content: center;
+    -webkit-box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.75);
+} */
+a {
+    color: black;
+    text-decoration-line: none;
+}
+ul {
+    list-style-type: none;
+}
+#block {
+    height: 3em;
+}
+
+#navbar {
+    background-color: #333; /* Black background color */
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    max-width: auto; /* Full width */
+    width: 100%;
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    margin: 0;
+    left: 0;
+  }
+  
+  /* Style the navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+  }
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  #hr1 {
+      width: 90%
+  }
+  #hr2 {
+    width: 66%;
+  }
