@@ -7,21 +7,32 @@ body {
     font-family: 'Alata', sans-serif;
 }
 #hireMe {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    width: 70%;
+    height: 400px;
     margin: 2em;
     padding: 2em;
     border: 2px solid yellow;
-    font-size: 20px;
+
+}
+.hireChild {
+    align-self: center;
+    justify-self: center;
 }
 
 #thinker  {
     animation-name: "thinkEffect";
-    animation-duration: 6s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-play-state: running;
+    animation-fill-mode: forwards;
 }
 @keyframes thinkEffect {
-    0%   {color: blue;}
-    100%  {color: pink;}
+    0%   {font-size: 16px;}
+    50%  {font-size: 18px;}  
+    100%  {font-size: 16px;}
   }
 #exists  {
     animation-name: "existEffect";
