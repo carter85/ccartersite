@@ -8,13 +8,6 @@ body {
 }
 #hireMe {
     display: grid;
-    align-self: center;
-    justify-self: center;
-    width: 70%;
-    height: 400px;
-    margin: 2em;
-    padding: 2em;
-    border: 2px solid yellow;
 
 }
 .hireChild {
