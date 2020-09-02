@@ -1,13 +1,31 @@
+    * {
+    box-sizing: border-box;
+}
+html {
+    font-size: 20px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    html {font-size: 16px;}
+    #developer, #firstName, #lastName {
+        font-size: 1.5em;
+    }
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 601px) {
+    html {font-size: 20px;}
+    #developer, #firstName, #lastName {
+        font-size: 2.5em;
+    }
+}
+
 body {
     background: rgb(80,76,102);
     background: linear-gradient(20deg, rgba(80,76,102,1) 0%, rgba(88,122,116,1) 66%, rgba(244,244,244,1) 100%); 
 }
-#signature {
-    display: grid;
-    font-family: 'Alata', sans-serif;
-}
 #hireMe {
-    display: grid;
+    display: inline;
 }
 .hireChild {
     align-self: center;
@@ -26,9 +44,6 @@ body {
     animation-delay: 3s;
     opacity: 0;
     animation-timing-function: ease-out;
-    position: absolute;
-    right: 480px;
-    top: 130px;
 }
 @keyframes nameFade {
     0% {opacity: 0;}
@@ -44,31 +59,18 @@ body {
     animation-delay: 2s;
     opacity: 1;
     animation-timing-function: ease-in;
-    position: absolute;
-    top: 130px;
-    left: -150px;
     overflow: hidden;
 }
+
 @keyframes nameMove {
-    0% {left: -220px;}
-    100% {left: 22rem;}
+    0% {position: ;}
+    100% {left: 5.2em;}
 }
 
-#thinker  {
-    animation-name: "thinkEffect";
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-    animation-fill-mode: forwards;
-}
-@keyframes thinkEffect {
-    0%   {font-size: 16px;}
-    50%  {font-size: 18px;}  
-    100%  {font-size: 16px;}
-  }
+
 #exists  {
     animation-name: "existEffect";
-    animation-duration: 20s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-play-state: running;
 }
@@ -125,14 +127,12 @@ body {
     opacity: 1;
 }
 #name {
-    font-size: 75px;    
     font-family: 'Merriweather', serif;
     opacity: 1;
     margin: 5px;
     padding: .1em;
 }
 #developer {
-    font-size: 65px;
     opacity: 1;
     margin: 5px;
     padding: .1em;
@@ -159,31 +159,12 @@ body {
     background-color: palevioletred;
 }   
 
-/* #navbar {
-    display: grid;
-    position: fixed;
-    width: 100%;
-    height: 3em;
-    top: 0px;
-    background: cadetblue;
-    left: 0em;
-    margin: 0px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    align-content: center;
-    -webkit-box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.75);
-} */
 a {
     color: black;
     text-decoration-line: none;
 }
 ul {
     list-style-type: none;
-}
-#block {
-    height: 3em;
 }
 
 #navbar {
