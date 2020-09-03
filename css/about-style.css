@@ -41,38 +41,29 @@ body {
     animation-iteration-count: 1;
     animation-play-state: running;
     animation-fill-mode: forwards;
-    animation-delay: 3s;
-    opacity: 0;
+    animation-delay: 2s;
+    opacity: 0;3
     animation-timing-function: ease-out;
 }
 @keyframes nameFade {
     0% {opacity: 0;}
-    70% {opacity: .5;}
+    30% {opacity: .5;}
     100%{opacity: 1;}
   } 
   #firstName {
     animation-name: "nameMove";
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
     animation-play-state: running;
     animation-fill-mode: forwards;
-    animation-delay: 2s;
+    animation-delay: 0s;
     opacity: 1;
-    animation-timing-function: ease-in;
-    overflow: hidden;
-    animation: slideUp .6s;
+    
 }
-
-keyframes expand {
-    0% {
-      width: 0px;
-    }
-    100% {
-      width: 100%;
-    }
-  }
-
-
+@keyframes nameMove {
+    0% {margin-left: -200%;}
+    100%{margin-left: 0%;}
+  } 
 #exists  {
     animation-name: "existEffect";
     animation-duration: 2s;
