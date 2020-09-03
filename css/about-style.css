@@ -31,10 +31,7 @@ body {
     align-self: center;
     justify-self: center;
 }
-#invisiBill {
-    width: 100%;
-    height: 100px;
-}
+
 #lastName {
     animation-name: "nameFade";
     animation-duration: 1s;
