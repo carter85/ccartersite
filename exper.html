@@ -1,48 +1,45 @@
-<!DOCTYPE html>
 <html>
-<div id="main">
 <head>
-<title>Experimental Page</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
 
-<!-- Viewport -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
 
-<!-- Stylesheets -->
-<link rel="stylesheet" href="./css/exper.css">
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;400&display=swap" rel="stylesheet"> 
-<!-- Font Awesome Icons -->
-<script src="https://kit.fontawesome.com/b3caeac506.js" crossorigin="anonymous"></script>
-<!-- JQuery link -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</head>
-<body>
-<div id="rod"></div>
-<div class="row">
-  <div class="col-3">..1.</div> <!-- 25% -->
-  <div class="col-9">..2.</div> <!-- 75% -->
-</div>
-<div class="row">
-    <div class="col-3 col-s-3">..3.</div>
-    <div class="col-6 col-s-9">..4.</div>
-    <div class="col-3 col-s-12">..5.</div>
-  </div> 
+    $(function() {
 
 
-<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate corrupti molestiae ad dignissimos unde laboriosam asperiores itaque cumque nisi iure.</p>
+   var desk = [];
 
+   $.getJSON('people.json', function(data) {
+       $.each(data.desk, function(i, f) {
+          var tblRow = "<tr>" + "<td>" + f.type + "</td>" +
+           "<td>" + f.design + "</td>" + "<td>" + f.cost + "</td>" + "<td>" + f.standing + "</td>" + "</tr>"
+           $(tblRow).appendTo("#deskdata tbody");
+     });
 
+   });
 
-
-
-
-
-
-
+});
 </script>
+</head>
+
+<body>
+
+<div class="wrapper">
+<div class="profile">
+   <table id= "deskdata" border="2">
+  <thead>
+            <th>Type</th>
+            <th>Design</th>
+            <th>Cost</th>
+            <th>Standing?</th>
+        </thead>
+      <tbody>
+
+       </tbody>
+   </table>
+
+</div>
+</div>
 
 </body>
-</div>
 </html>

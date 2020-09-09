@@ -1,0 +1,22 @@
+{
+    "desk": [
+        {
+            "type": "metal",
+            "design": "wire",
+            "cost": "cheap",
+            "standing": true
+        },
+        {
+            "type": "wood",
+            "design": "fancy",
+            "cost": "high",
+            "standing": false
+        },
+        {
+            "type": "ceramic",
+            "design": "smooth",
+            "cost": "a bit much",
+            "standing": true
+        }
+    ]
+}
