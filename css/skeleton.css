@@ -466,11 +466,22 @@ there.
 .knowTitle {
   font-size: x-large;
 }
+
+/* FLIP CARDS START */
+#cardCont {
+  display: grid;
+  width: 100%;
+  height: auto;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: rosybrown;
+}
 #card1, #card2 {
   width: 100%;
   display: grid;
-  background-color: cadetblue;
+  background-color: white;
   align-items: center;
+
 }
 .flip-card {
   background-color: transparent;
@@ -506,16 +517,18 @@ there.
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
+  background-color: #ddd;
   color: black;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
+  background-color: #ddd;
+  color: black;
   transform: rotateY(180deg);
 } 
+/* FLIP CARDS END */
+
 #box6 {
   background-color: cyan;
   max-width: 100%;
