@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/navstyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
   <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -46,12 +47,12 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   
-
+<div id="home"></div>
   <div class="topnav" id="myTopnav">
     <a class="navWord" href="#home" class="active"><span class="navWord">Home</span></a>
     <a class="navWord" href="#about"><span class="navWord">About</span></a>
-    <a class="navWord" href="#blog"><span class="navWord">Blog</span></a>
     <a class="navWord" href="#projects"><span class="navWord">Projects</span></a>
+    <a class="navWord" href="#blog"><span class="navWord">Blog</span></a>
     <a class="navWord" href="#contact"><span class="navWord">Contact Me</span></a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
@@ -67,8 +68,8 @@
     }
   }
 </script>
-  
- <!--  <div class="topnav" id="myTopnav">
+  <!-- 
+   <div class="topnav" id="myTopnav">
     <p class="navItems"><a href="#" class="navWord"><strong>Home</strong></a></p>
     <p class="navItems"><a href="#" class="navWord"><strong>About</strong></a></p>
     <p class="navItems"><a href="#" class="navWord"><strong>Projects</strong></a></p>
@@ -77,7 +78,7 @@
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
-  </div> -->
+  </div>  -->
   
 
   
@@ -96,9 +97,9 @@
   <div id="heroBox" class="twelve columns">
   <!-- <div id="heroBox" class="offset-by-two columns"> -->
     <div id="introContainer">
-          <h1 id="name">Casey Carter</h1>
-          <hr>
-          <h2 id="developer">Web Developer</h2>
+          <h1 class="animate__animated animate__rotateInDownRight">Casey Carter</h1>
+          <hr class="divider animate__animated animate__zoomIn">
+          <h2 id="developer" class="animate__animated animate__fadeInUp">Web Developer</h2>
               <p>I am 35 years old, living in East Texas. Having recently moved back home to be around family during the 2020 pandemic, 
                   I decided to take time to learn a new skill, Web Development. This site is primarily to act as a portfolio and resume.
               If you need a thinker, or a doer, or someone who just exists, then I could be one of those things for you!
@@ -112,7 +113,7 @@
   <div class="twelve columns spacer"></div>
   
   <div id="languages" class="offset-by-two three columns knowledge">
-    <p class="knowTitle">Languages Known</p><hr>
+    <p class="knowTitle">Languages Known</p><hr class="divider animate__animated animate__zoomIn">
       <ul>                  
         <li>HTML </li>
         <li>CSS </li>
@@ -127,7 +128,7 @@
   <div class="two columns spacer"></div>
   
   <div id="tools" class="three columns knowledge">
-    <p class="knowTitle">Dev Tools Used</p><hr>
+    <p class="knowTitle">Dev Tools Used</p><hr class="divider animate__animated animate__zoomIn">
     <ul>
       <li>Google </li>
       <li>Git </li>
@@ -141,22 +142,14 @@
   
   <div class="twelve columns spacer"></div>
 
-  <div id="box6" class="one column"></div>
-  <div id="box7" class="one column"></div>
-  <div id="box8" class="one column"></div>
-  <div id="box9" class="one column"></div>
-  <div id="box10" class="one column"></div>
-  <div id="box11" class="one column"></div>
-  <div id="box12" class="one column"></div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      </div>
-    </div>
-  </div>
+<div id="projects" class="genericContainer offset-by-one-third columns one-third column">Lorem ipsum dolor<hr class="divider animate__animated animate__zoomIn"> sit amet consectetur adipisicing elit. Laborum quasi neque molestiae non, eveniet quis impedit vero animi? Consequuntur debitis minus sunt, fuga consectetur odit, ut repellendus voluptatum in sequi consequatur praesentium quia eaque facilis ullam voluptatibus non, recusandae ipsa harum. Repellat quae officia laboriosam non, maiores delectus a corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laboriosam aliquam hic perferendis modi vero voluptatum qui amet eaque fugit!</div>
+
+<div class="twelve columns spacer"></div>
+
+<div id="blog" class="genericContainer eight offset-by-two columns">Lorem ipsum dolor <hr class="divider animate__animated animate__zoomIn">sit amet consectetur adipisicing elit. Laborum quasi neque molestiae non, eveniet quis impedit vero animi? Consequuntur debitis minus sunt, fuga consectetur odit, ut repellendus voluptatum in sequi consequatur praesentium quia eaque facilis ullam voluptatibus non, recusandae ipsa harum. Repellat quae officia laboriosam non, maiores delectus a corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laboriosam aliquam hic perferendis modi vero voluptatum qui amet eaque fugit!</div>
+
+<div class="twelve columns spacer"></div>
+
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
