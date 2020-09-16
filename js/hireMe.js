@@ -8,3 +8,15 @@ function scrollFunction() {
     document.getElementById("navbar").style.top = "-50px";
   }
 }
+
+
+    
+  
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}

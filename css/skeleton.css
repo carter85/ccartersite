@@ -412,14 +412,29 @@ there.
 
 
 /* Larger than mobile */
-@media (max-width: 400px) {
-  .navItems {
-    display: none;
-  }
-}
+@media (min-width: 400px) {}
 
 /* Larger than phablet (also point when grid becomes active) */
-@media (min-width: 550px) {}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
 
 /* Larger than tablet */
 @media (min-width: 750px) {}
@@ -430,54 +445,6 @@ there.
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
 
-#navCont {
-  width: 100%;
-  max-height: 100px;
-  height: auto;
-  display: flex;
-  background-color: rgb(212, 212, 212);
-  align-items: flex-end;
-  justify-content: flex-end;
-  -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
-  
-}
-.navWord {
-  transform: skewX(25deg);
-}
-.navItems:hover {
-  background-color: #aaa;
-}
-/* 
-#navBar {
-  background-color: grey;
-  color: black;
-  max-width: 100%;
-  min-width: 50px;
-  max-height: 100px;
-  min-height: 50px;
-  position: relative;
-  flex-direction: column;
-  z-index: 10;
-} */
-div a {
-  color: black;
-  list-style: none;
-}
-.navItems {
-  font-family: 'Libre Baskerville', serif;
-  display: flex;
-  background-color: #ddd;
-  margin-right: 2em;
-  transform: skewX(-25deg);
-  padding: 1em;
-  width: auto;
-  height: auto;
-  -webkit-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
-}
 .brunt {
   width: 100px;
   height: 100px;
@@ -494,6 +461,7 @@ box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
   min-width: 50px;
   max-height: 100%;
   min-height: 50px;
+  z-index: 1;
   
 }
 #introContainer {
@@ -502,6 +470,7 @@ box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.75);
   display: grid;
   align-content: center;
   position: relative;
+  z-index: 1;
   -webkit-box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.75);
 -moz-box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.75);
 box-shadow: 9px 10px 5px 0px rgba(0,0,0,0.75);

@@ -20,31 +20,76 @@
 
   <!-- ICONS 
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/navstyle.css">
 
   <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
-
+  
+  
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <!-- <link rel="Scripts" href="js/hireMe.js"> -->
+  
+  
 </head>
 <body>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div id="navCont" class="ten columns">
+
+  
+
+  <div class="topnav" id="myTopnav">
+    <a class="navWord" href="#home" class="active"><span class="navWord">Home</span></a>
+    <a class="navWord" href="#about"><span class="navWord">About</span></a>
+    <a class="navWord" href="#blog"><span class="navWord">Blog</span></a>
+    <a class="navWord" href="#projects"><span class="navWord">Projects</span></a>
+    <a class="navWord" href="#contact"><span class="navWord">Contact Me</span></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+  
+ <!--  <div class="topnav" id="myTopnav">
+    <p class="navItems"><a href="#" class="navWord"><strong>Home</strong></a></p>
+    <p class="navItems"><a href="#" class="navWord"><strong>About</strong></a></p>
+    <p class="navItems"><a href="#" class="navWord"><strong>Projects</strong></a></p>
+    <p class="navItems"><a href="#" class="navWord"><strong>Blog</strong></a></p>
+    <p class="navItems"><a href="#" class="navWord"><strong>Contact Me</strong></a></p>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div> -->
+  
+
+  
+<!-- <div id="navCont" class="ten columns">
        <p class="navItems"><a href="#" class="navWord"><strong>Home</strong></a></p>
        <p class="navItems"><a href="#" class="navWord"><strong>About</strong></a></p>
        <p class="navItems"><a href="#" class="navWord"><strong>Projects</strong></a></p>
        <p class="navItems"><a href="#" class="navWord"><strong>Blog</strong></a></p>
        <p class="navItems"><a href="#" class="navWord"><strong>Contact Me</strong></a></p>
-       
       </div>
+ -->
+
 
 <div class="twelve columns spacer"></div>
 
