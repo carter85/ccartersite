@@ -22,30 +22,29 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
-
+  
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/navstyle.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-
   
-  
-  <!-- Scripts
+  <!-- CSS ANIMATIONS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
- <link rel="Scripts" href="js/hireMe.js"> 
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">  
   
 </head>
+
 <body>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- layout partially inspired by tylerwest.dev's portfolio site -->
 
+<!-- NAVIGATION START
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- navbar layout and JS inspired from w3's reactive menu -->
   
 <div id="home"></div>
   <div class="topnav" id="myTopnav">
@@ -58,8 +57,7 @@
        <i class="fa fa-bars"></i>
     </a>
   </div>
-  
- <!-- part of navbar hamburger menu, procured from w3 schools resonsive menu -->
+
 <script>
   function myFunction() {
   var x = document.getElementById("myTopnav");
@@ -70,43 +68,42 @@
   }
 }
 </script>
-<!-- id="introContainer" -->
+<!-- NAVIGATION END -->
   
 <div class="twelve columns spacer"></div>
+
+<!-- HEROBOX START
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div id="heroContainer">
   <div id="heroBox" class="genericContainer">
-          <h1 class="animate__animated animate__rotateInDownRight">Casey Carter</h1>
-          <hr class="divider animate__animated animate__zoomIn">
-          <h2 id="developer" class="animate__animated animate__fadeInUp">Web Developer</h2>
-              <p>I am 35 years old, living in East Texas. Having recently moved back home to be around family during the 2020 pandemic, 
-                  I decided to take time to learn a new skill, Web Development. This site is primarily to act as a portfolio and resume.
-              If you need a thinker, or a doer, or someone who just exists, then I could be one of those things for you!
-              With a variety of experience, I aim to bring a unique and innovative point of view to your company.</p>
-    </div>
-  </div> 
-  <!-- heroBox End -->
+    <h1 class="animate__animated animate__rotateInDownRight">Casey Carter</h1>
+    <hr class="divider animate__animated animate__zoomIn">
+    <h2 id="developer" class="animate__animated animate__fadeInUp">Web Developer</h2>
+      <p>Hello! My name is Casey Carter. I recently moved back to Texas from Illinois, and am studying web development and programming in earnest. <br><br>
+        This website showcases my skills and techniques in these fields.<br><br>
+        I take pride in my ability to approach an issue from different perspectives, and finding solutions that others may miss. My background in retail and customer service enables me to bring a unique  and innovative viewpoint to your projects.
+      </p>
+  </div>
+</div> 
+<!-- heroBox End -->
 
+<div class="twelve columns spacer"></div>
   
-  
-  <div class="twelve columns spacer"></div>
-  
-  <div id="languages" class="offset-by-two three columns knowledge genericContainer">
-    <p class="knowTitle">Languages Known</p><hr class="divider animate__animated animate__zoomIn">
-      <ul>                  
-        <li>HTML </li>
-        <li>CSS </li>
-        <li>JavaScript </li>
-        <li>Vue </li>
-        <li>JQuery </li>
-      </ul>
-    </div>
+<div id="languages" class="offset-by-two three columns knowledge genericContainer">
+  <p class="knowTitle">Languages Known</p><hr class="divider animate__animated animate__zoomIn">
+    <ul>                  
+      <li>HTML </li>
+      <li>CSS </li>
+      <li>JavaScript </li>
+      <li>Vue </li>
+      <li>JQuery </li>
+    </ul>
   </div>
   
-
-  <div class="two columns spacer"></div>
+<div class="two columns spacer"></div>
   
-  <div id="tools" class="three columns knowledge genericContainer">
-    <p class="knowTitle">Dev Tools Used</p><hr class="divider animate__animated animate__zoomIn">
+<div id="tools" class="three columns knowledge genericContainer">
+  <p class="knowTitle">Dev Tools Used</p><hr class="divider animate__animated animate__zoomIn">
     <ul>
       <li>Google </li>
       <li>Git </li>
@@ -116,15 +113,20 @@
       <li>Microsoft Windows</li>
       <li>Stack Overflow</li>
     </ul>
-  </div>
+</div>
   
-  <div class="twelve columns spacer"></div>
-
-<div id="projects" class="genericContainer offset-by-one-third columns one-third column">Lorem ipsum dolor<hr class="divider animate__animated animate__zoomIn"> sit amet consectetur adipisicing elit. Laborum quasi neque molestiae non, eveniet quis impedit vero animi? Consequuntur debitis minus sunt, fuga consectetur odit, ut repellendus voluptatum in sequi consequatur praesentium quia eaque facilis ullam voluptatibus non, recusandae ipsa harum. Repellat quae officia laboriosam non, maiores delectus a corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laboriosam aliquam hic perferendis modi vero voluptatum qui amet eaque fugit!</div>
-
 <div class="twelve columns spacer"></div>
 
+<!-- PROJECTS START
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div id="projects" class="genericContainer offset-by-one-third columns one-third column">Lorem ipsum dolor<hr class="divider animate__animated animate__zoomIn"> sit amet consectetur adipisicing elit. Laborum quasi neque molestiae non, eveniet quis impedit vero animi? Consequuntur debitis minus sunt, fuga consectetur odit, ut repellendus voluptatum in sequi consequatur praesentium quia eaque facilis ullam voluptatibus non, recusandae ipsa harum. Repellat quae officia laboriosam non, maiores delectus a corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laboriosam aliquam hic perferendis modi vero voluptatum qui amet eaque fugit!</div>
+<!-- PROJECTS END -->
+
+<div class="twelve columns spacer"></div>
+<!-- BLOG START
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div id="blog" class="genericContainer eight offset-by-two columns">Lorem ipsum dolor <hr class="divider animate__animated animate__zoomIn">sit amet consectetur adipisicing elit. Laborum quasi neque molestiae non, eveniet quis impedit vero animi? Consequuntur debitis minus sunt, fuga consectetur odit, ut repellendus voluptatum in sequi consequatur praesentium quia eaque facilis ullam voluptatibus non, recusandae ipsa harum. Repellat quae officia laboriosam non, maiores delectus a corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laboriosam aliquam hic perferendis modi vero voluptatum qui amet eaque fugit!</div>
+<!-- BLOG END -->
 
 <div class="twelve columns spacer"></div>
 
