@@ -21,7 +21,10 @@
   <!-- ICONS 
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -30,14 +33,11 @@
   <link rel="stylesheet" href="css/navstyle.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 
-  <!-- Favicon
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
   
   
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <!-- <link rel="Scripts" href="js/hireMe.js"> -->
+ <link rel="Scripts" href="js/hireMe.js"> 
   
   
 </head>
@@ -55,47 +55,27 @@
     <a class="navWord" href="#blog"><span class="navWord">Blog</span></a>
     <a class="navWord" href="#contact"><span class="navWord">Contact Me</span></a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
+       <i class="fa fa-bars"></i>
     </a>
   </div>
-  <script>
+  
+ 
+<script>
   function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
   }
+}
+
 </script>
-  <!-- 
-   <div class="topnav" id="myTopnav">
-    <p class="navItems"><a href="#" class="navWord"><strong>Home</strong></a></p>
-    <p class="navItems"><a href="#" class="navWord"><strong>About</strong></a></p>
-    <p class="navItems"><a href="#" class="navWord"><strong>Projects</strong></a></p>
-    <p class="navItems"><a href="#" class="navWord"><strong>Blog</strong></a></p>
-    <p class="navItems"><a href="#" class="navWord"><strong>Contact Me</strong></a></p>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>  -->
+ 
   
-
-  
-<!-- <div id="navCont" class="ten columns">
-       <p class="navItems"><a href="#" class="navWord"><strong>Home</strong></a></p>
-       <p class="navItems"><a href="#" class="navWord"><strong>About</strong></a></p>
-       <p class="navItems"><a href="#" class="navWord"><strong>Projects</strong></a></p>
-       <p class="navItems"><a href="#" class="navWord"><strong>Blog</strong></a></p>
-       <p class="navItems"><a href="#" class="navWord"><strong>Contact Me</strong></a></p>
-      </div>
- -->
-
-
 <div class="twelve columns spacer"></div>
 
   <div id="heroBox" class="twelve columns">
-  <!-- <div id="heroBox" class="offset-by-two columns"> -->
     <div id="introContainer">
           <h1 class="animate__animated animate__rotateInDownRight">Casey Carter</h1>
           <hr class="divider animate__animated animate__zoomIn">
