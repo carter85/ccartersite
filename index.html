@@ -47,12 +47,14 @@
 <!-- navbar layout and JS inspired from w3's reactive menu -->
   
 <div id="home"></div>
-  <div class="topnav" id="myTopnav">
+  <div class="topnav blah" id="myTopnav">
     <a class="navWord" href="#home" class="active"><span class="navWord">Home</span></a>
     <a class="navWord" href="#about"><span class="navWord">About</span></a>
     <a class="navWord" href="#projects"><span class="navWord">Projects</span></a>
     <a class="navWord" href="#blog"><span class="navWord">Blog</span></a>
     <a class="navWord" href="#contact"><span class="navWord">Contact Me</span></a>
+    <button id="darkmode" onclick="darkMode()">Dark Mode</button>
+    <a class="navWord" href="#" id="mehmode" onclick="mehMode()">Meh Mode</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
        <i class="fa fa-bars"></i>
     </a>
@@ -67,6 +69,26 @@
     x.className = "topnav";
   }
 }
+/* function darkMode() {
+  var x = document.getElementsByClassName(" genericContainer blah");
+  if (x.className === " blah") {
+    x.className += " dark";
+  } else {
+    x.className = " blah";
+  }
+} */
+function darkMode() {
+  var element = document.getElementsByClassName("blah");
+  element.classList.toggle("dark");
+} 
+function blahMode() {
+  var x = document.getElementsByClassName("dark");
+  if (x.className === "dark") {
+    x.className += " blah";
+  } else {
+    x.className = "dark";
+  }
+}
 </script>
 <!-- NAVIGATION END -->
   
@@ -75,7 +97,7 @@
 <!-- HEROBOX START
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 <div id="heroContainer">
-  <div id="heroBox" class="genericContainer">
+  <div id="heroBox" class=" genericContainer blah">
     <h1 class="animate__animated animate__rotateInDownRight">Casey Carter</h1>
     <hr class="divider animate__animated animate__zoomIn">
     <h2 id="developer" class="animate__animated animate__fadeInUp">Web Developer</h2>
@@ -89,20 +111,18 @@
 
 <div class="twelve columns spacer"></div>
   
-<div id="languages" class="offset-by-two three columns knowledge genericContainer">
+<div id="languages" class="offset-by-two three columns knowledge genericContainer blah">
   <p class="knowTitle">Languages Known</p><hr class="divider animate__animated animate__zoomIn">
     <ul>                  
       <li>HTML </li>
       <li>CSS </li>
       <li>JavaScript </li>
-      <li>Vue </li>
-      <li>JQuery </li>
     </ul>
   </div>
   
 <div class="two columns spacer"></div>
   
-<div id="tools" class="three columns knowledge genericContainer">
+<div id="tools" class="three columns knowledge genericContainer blah">
   <p class="knowTitle">Dev Tools Used</p><hr class="divider animate__animated animate__zoomIn">
     <ul>
       <li>Google </li>
@@ -119,17 +139,36 @@
 
 <!-- PROJECTS START
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div id="projects" class="genericContainer offset-by-one-third columns one-third column">Lorem ipsum dolor<hr class="divider animate__animated animate__zoomIn"> sit amet consectetur adipisicing elit. Laborum quasi neque molestiae non, eveniet quis impedit vero animi? Consequuntur debitis minus sunt, fuga consectetur odit, ut repellendus voluptatum in sequi consequatur praesentium quia eaque facilis ullam voluptatibus non, recusandae ipsa harum. Repellat quae officia laboriosam non, maiores delectus a corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laboriosam aliquam hic perferendis modi vero voluptatum qui amet eaque fugit!</div>
+<div id="projects" class=" genericContainer blah offset-by-one-third columns one-third column">Lorem ipsum dolor<hr class="divider animate__animated animate__zoomIn"> sit amet consectetur adipisicing elit. Laborum quasi neque molestiae non, eveniet quis impedit vero animi? Consequuntur debitis minus sunt, fuga consectetur odit, ut repellendus voluptatum in sequi consequatur praesentium quia eaque facilis ullam voluptatibus non, recusandae ipsa harum. Repellat quae officia laboriosam non, maiores delectus a corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laboriosam aliquam hic perferendis modi vero voluptatum qui amet eaque fugit!</div>
 <!-- PROJECTS END -->
 
 <div class="twelve columns spacer"></div>
 <!-- BLOG START
 –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div id="blog" class="genericContainer eight offset-by-two columns">Lorem ipsum dolor <hr class="divider animate__animated animate__zoomIn">sit amet consectetur adipisicing elit. Laborum quasi neque molestiae non, eveniet quis impedit vero animi? Consequuntur debitis minus sunt, fuga consectetur odit, ut repellendus voluptatum in sequi consequatur praesentium quia eaque facilis ullam voluptatibus non, recusandae ipsa harum. Repellat quae officia laboriosam non, maiores delectus a corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laboriosam aliquam hic perferendis modi vero voluptatum qui amet eaque fugit!</div>
+<div id="blog" class=" genericContainer blah eight offset-by-two columns">Lorem ipsum dolor <hr class="divider animate__animated animate__zoomIn">sit amet consectetur adipisicing elit. Laborum quasi neque molestiae non, eveniet quis impedit vero animi? Consequuntur debitis minus sunt, fuga consectetur odit, ut repellendus voluptatum in sequi consequatur praesentium quia eaque facilis ullam voluptatibus non, recusandae ipsa harum. Repellat quae officia laboriosam non, maiores delectus a corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia laboriosam aliquam hic perferendis modi vero voluptatum qui amet eaque fugit!</div>
 <!-- BLOG END -->
 
 <div class="twelve columns spacer"></div>
 
+<!-- CONTACT START
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!-- <div id="contact">
+  <div id="contactCont">
+  <div class=" genericContainer blah">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla modi rem quaerat ratione sequi sed tenetur iusto alias ipsam assumenda.
+          <li id="contactItem"><a href="#">Twitter</a></li>
+          <li id="contactItem"><a href="#">Github</a></li>
+          <li id="contactItem"><a href="#">LinkedIn</a></li>
+          <li id="contactItem"><a href="#">Dev.to</a></li>
+          <li id="contactItem"><a href="#"></a></li>
+      </p>
+
+    </div>
+  </div>
+</div> -->
+<!-- CONTACT END -->
+
+<div class="twelve columns spacer"></div>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
