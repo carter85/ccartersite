@@ -545,7 +545,7 @@ there.
   z-index: 0;
 }
 .dark {
-  color: white;
+  color: whitesmoke;
   background-color: rgb(12, 6, 6);
   -webkit-box-shadow: 9px 10px 5px 0px rgba(140,140,140,0.75);
   -moz-box-shadow: 9px 10px 5px 0px rgba(140,140,140.75);

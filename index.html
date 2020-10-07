@@ -78,9 +78,17 @@
   }
 } */
 function darkMode() {
-  var element = document.getElementsByClassName("blah");
-  element.classList.toggle("dark");
+  var element = document.querySelectorAll("#heroBox");
+  element.classList.add("dark");
+  //element.classList.remove("blah");
+  //element.classList.remove("pretty");
 } 
+
+function mehMode() {
+  var element = document.getElementById("heroBox");
+  element.classList.toggle("pretty");
+} 
+
 function blahMode() {
   var x = document.getElementsByClassName("dark");
   if (x.className === "dark") {
